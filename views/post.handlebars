@@ -2,8 +2,12 @@
   <h2>{{name}}</h2>
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-    <input type="text">
-    <button class="btn btn-primary">Submit</button>
-  </p>
 </div>
+<form class="form comment-form">
+<div class="form-group">
+  <input class="form-input" type="text" id="comment_text" />
+  <button class="btn btn-primary" type="submit">comment</button>
+</div>
+</form>
+
+<script src="./js/comment.js"></script>
